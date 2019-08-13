@@ -1,3 +1,11 @@
 class Book < ApplicationRecord
-  belongs_to :author
+
+def complete
+  if @book.completed == false
+    return "Incomplete"
+  else
+    return "Complete"
+  end
+end
+
 end

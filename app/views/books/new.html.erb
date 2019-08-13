@@ -1,0 +1,12 @@
+
+<div class="container">
+<h1> Add Book </h1>
+ <%= simple_form_for @book do |f| %>
+  <%= f.input :title %>
+  <%= f.input :author %>
+  <%= f.input :note %>
+  <%= f.button :submit, :class => "btn btn-primary" %>
+<%=link_to "Cancel", books_path, class: "btn btn-primary" %>
+<% end %>
+
+</div>
